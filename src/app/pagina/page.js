@@ -1,8 +1,14 @@
-import Login from "@/components/Title";
+"use client"
+
+import Form from "@/components/Form";
 export default function LoginPage() {
+  function xd(){
+    alert("Me gusta la lluvia")
+  }
+  
   return (
-   <>
-    <Login></Login>
+    <>
+    <Form placeholder1={"XD"} type1={"text"} type2={"checkbox"} onClick={xd} text={"El pepe"}></Form>
    </> 
   )
 }

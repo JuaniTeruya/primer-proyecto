@@ -29,10 +29,7 @@ export default function RootLayout({ children }) {
       <body className="body-style">
         <header className="header-style">
           <nav>
-            <ul className="nav-list">
-              <li><a href="/">Inicio</a></li>
-              <li><a href="/login">Login</a></li>
-            </ul>
+            <h1>Pagina Prueba</h1>
           </nav>
         </header>
         <main>{children}</main>

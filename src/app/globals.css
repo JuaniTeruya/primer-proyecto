@@ -4,7 +4,7 @@
   --foreground-light: #333;
   --background-dark: #121212;
   --foreground-dark: #f4f4f4;
-  --primary: #6200ea; /* Color principal */
+  --primary: #1a4226; /* Color principal */
   --secondary: #03dac6; /* Color secundario */
   --border-radius: 10px;
   --transition-duration: 0.3s;
@@ -115,6 +115,7 @@ h1 {
   margin-bottom: 20px;
   font-weight: 700;
   letter-spacing: 0.5px;
+  color: white;
 }
 
 .login-form {
@@ -163,7 +164,7 @@ button:hover {
 }
 
 button:active {
-  background-color: #3f09e7;
+  background-color: #231468;
 }
 
 /* Sombra sutil */
