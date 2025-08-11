@@ -32,7 +32,9 @@ export default function RootLayout({ children }) {
             <h1>Pagina Prueba</h1>
           </nav>
         </header>
-        <main>{children}</main>
+        <main>
+          {children}
+        </main>
         <footer className="footer-style">
           <p>&copy; 2025 Mi Página. Todos los derechos reservados.</p>
         </footer>
