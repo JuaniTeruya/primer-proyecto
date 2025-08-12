@@ -1,9 +1,32 @@
-import Link from "@/components/link";
+"use client";
 
-export default function LoginPage() {
+import Button from "@/components/Button";
+import Input from "@/components/Input";
+import Link from "@/components/Link";
+import { useState } from "react";
+
+export default function Contador() {
+  const [estado, setEstado] = useState(false);
+  const [contador, setContador] = useState(0);
+
+  function aumDis() {
+    if(estado=="true"){
+      setContador(contador+1)
+    }else{
+      setContador(contador-1)
+    }
+  }
+
+  function checkbox(event) {
+    setEstado(event.target.checked)
+  }
+
   return (
-   <>
-    <Link href={".."} text={"Volver"}></Link>
-   </> 
-  )
+    <>
+      <Link href={".."} text={"Volver"} />
+      <Button onClick={aumDis} text="Aumentar o disminuir"/>
+      <Input onChange={checkbox} type="checkbox"/>
+      <p>Contador: {contador}</p>
+    </>
+  );
 }
