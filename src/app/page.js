@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Link href={"pagina"} text={"pagina1"}></Link>
-        <Link href={"pagina2"} text={"pagina2"}></Link>
+        <Link href={"pagina"} text={"Login"}></Link>
+        <Link href={"pagina2"} text={"Contador"}></Link>
         <Image
           className={styles.logo}
           src="/next.svg"
