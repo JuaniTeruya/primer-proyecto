@@ -148,24 +148,7 @@ h1 {
   background-color: #fff;
 }
 
-button {
-  padding: 14px;
-  background-color: var(--primary);
-  color: white;
-  border: none;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-  font-size: 1.1rem;
-  transition: background-color var(--transition-duration);
-}
 
-button:hover {
-  background-color: var(--secondary);
-}
-
-button:active {
-  background-color: #231468;
-}
 
 /* Sombra sutil */
 .shadow {
