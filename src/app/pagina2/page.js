@@ -3,8 +3,8 @@
 import clsx from 'clsx';
 import Button from "@/components/Button";
 import Input from "@/components/Input";
-import Link from "@/components/Link";
 import { useEffect, useState } from "react";
+import Link from 'next/link';
 
 export default function Contador() {
   const [estado, setEstado] = useState(false);
@@ -35,7 +35,7 @@ export default function Contador() {
 
   return (
     <>
-      <Link href={".."} text={"Volver"} />
+      <Link href={".."}><Button text="Volver"></Button></Link>
       <Button onClick={aumDis} text="Aumentar o disminuir" style={style} />
       <Input onChange={checkbox} type="checkbox" />
       <p>Contador: {contador}</p>

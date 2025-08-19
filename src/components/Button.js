@@ -9,7 +9,6 @@ export default function Button(props) {
         <button className={clsx({
           [styles.button]: true, 
           [styles.decremento] : props.style == true,
-          [styles.incremento] : props.style == false,
         })} onClick={props.onClick}>{props.text}</button>
       </>
     );

@@ -1,14 +1,16 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Link from "@/components/Link";
+import Link from 'next/link';
+import Button from "@/components/Button";
+
 
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Link href={"pagina"} text={"Login"}></Link>
-        <Link href={"pagina2"} text={"Contador"}></Link>
+        <Link href={"pagina"}><Button text="Login"></Button></Link>
+        <Link href={"pagina2"}><Button text="Contador"></Button></Link>
         <Image
           className={styles.logo}
           src="/next.svg"

@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -35,9 +36,6 @@ export default function RootLayout({ children }) {
         <main>
           {children}
         </main>
-        <footer className="footer-style">
-          <p>&copy; 2025 Mi Página. Todos los derechos reservados.</p>
-        </footer>
       </body>
     </html>
   );

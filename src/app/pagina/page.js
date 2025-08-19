@@ -1,16 +1,24 @@
 "use client"
 
+import Button from "@/components/Button";
 import Form from "@/components/Form";
-import Link from "@/components/link";
+import Link from 'next/link';
+import { useRouter } from "next/router";
 export default function LoginPage() {
-  function xd(){
-    alert("Me gusta la lluvia")
+
+  const router = useRouter();
+  const [logged, setLogged] = useState(false);
+
+  function login(){
+    if(logged == true){
+      router.push("pagina2")
+    }
   }
   
   return (
     <>
-    <Form placeholder1={"XD"} type1={"text"} type2={"checkbox"} onClick={xd} text={"El pepe"}></Form>
-    <Link href={".."} text={"Volver"}></Link>
+    <Form placeholder1={"nombre"} type1={"text"} type2={"checkbox"} onClick={login} text={"El pepe"}></Form>
+    <Link href={".."}><Button text="Volver"></Button></Link>
    </> 
   )
 }
