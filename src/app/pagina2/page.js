@@ -35,9 +35,10 @@ export default function Contador() {
 
   return (
     <>
-      <Link href={".."}><Button text="Volver"></Button></Link>
+      <Link href={"/"}><Button text="Volver"></Button></Link>
       <Button onClick={aumDis} text="Aumentar o disminuir" style={style} />
-      <Input onChange={checkbox} type="checkbox" />
+      {contador == 0? <h3>Mati es Puto</h3>:<h3>Mati no es Puto</h3> }
+      <Input onChange={checkbox} type="checkbox"/>
       <p>Contador: {contador}</p>
     </>
   );
